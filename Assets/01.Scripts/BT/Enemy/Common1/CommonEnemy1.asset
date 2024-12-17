@@ -1,0 +1,387 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2597303510718411395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db920e62f70f420bb33c771449926fa4, type: 3}
+  m_Name: CommonEnemy1
+  m_EditorClassIdentifier: 
+  Graphs:
+  - rid: 3599170281910042975
+  RootGraph:
+    rid: 3599170281910042975
+  m_DebugInfo: {fileID: 1627833635847645680}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 3599170281910042975
+      type: {class: BehaviorGraphModule, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        AuthoringAssetID:
+          m_Value0: 14141515313704273203
+          m_Value1: 7260532042743210856
+        m_DebugInfo: {fileID: 0}
+        Root:
+          rid: 3599170281910042976
+        BlackboardReference:
+          rid: 3599170281910042977
+        BlackboardGroupReferences: []
+        m_VersionTimestamp: 638698254841956288
+    - rid: 3599170281910042976
+      type: {class: Start, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 17287603231350146537
+          m_Value1: 14560487171592592540
+        Graph:
+          rid: 3599170281910042975
+        m_Parent:
+          rid: -2
+        m_Child:
+          rid: -2
+        Repeat: 1
+    - rid: 3599170281910042977
+      type: {class: BlackboardReference, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        m_Blackboard:
+          rid: 3599170281910042978
+        m_Source: {fileID: 1147628039253803403}
+    - rid: 3599170281910042978
+      type: {class: Blackboard, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        m_Variables:
+        - rid: 3599170281910042979
+        - rid: 3599170281910042980
+        - rid: 3599170281910042981
+        - rid: 3599170281910042982
+        - rid: 3599170281910042983
+        - rid: 3599170281910042984
+        - rid: 3599170281910042985
+    - rid: 3599170281910042979
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 0}
+    - rid: 3599170281910042980
+      type: {class: 'BlackboardVariable`1[[EntityMover, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 5904417405269270357
+          m_Value1: 9669836472990013344
+        Name: Mover
+        m_Value: {fileID: 0}
+    - rid: 3599170281910042981
+      type: {class: 'BlackboardVariable`1[[EntityRenderer, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 9852792481928973458
+          m_Value1: 13144008029007646800
+        Name: Renderer
+        m_Value: {fileID: 0}
+    - rid: 3599170281910042982
+      type: {class: 'BlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 846753127742361054
+          m_Value1: 4693156328686043498
+        Name: Target
+        m_Value: {fileID: 0}
+    - rid: 3599170281910042983
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 10938850044205767082
+          m_Value1: 3162083762509755897
+        Name: SightRange
+        m_Value: 0
+    - rid: 3599170281910042984
+      type: {class: 'BlackboardVariable`1[[StateSO, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 15497534404654245639
+          m_Value1: 7431726267304443813
+        Name: State
+        m_Value: {fileID: 0}
+    - rid: 3599170281910042985
+      type: {class: 'BlackboardVariable`1[[CommonEnemyStateChange, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 9090294413597610063
+          m_Value1: 12480293517276887150
+        Name: StateChange
+        m_Value: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad8f2220607dac4db5082ff333fafb8, type: 3}
+  m_Name: CommonEnemy1
+  m_EditorClassIdentifier: 
+  Blackboard: {fileID: 639267239966009532}
+  m_Description: 
+  m_Nodes:
+  - rid: 3599170270791991652
+  m_VersionTimestamp: 638698254841956288
+  m_DebugInfo: {fileID: 1627833635847645680}
+  AssetID:
+    m_Value0: 14141515313704273203
+    m_Value1: 7260532042743210856
+  Story:
+    Story: 
+    StoryVariableNames: []
+    Variables: []
+  m_NodeModelsInfo:
+  - Name: On Start
+    Story: 
+    RuntimeTypeID:
+      m_Value0: 3335272451348827663
+      m_Value1: 11549843281177505721
+    Variables: []
+    NamedChildren: []
+  m_Blackboards: []
+  m_CommandBuffer:
+    m_Commands: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 3599170270791991652
+      type: {class: StartNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 0, y: 0}
+        ID:
+          m_Value0: 17287603231350146537
+          m_Value1: 14560487171592592540
+        Parents: []
+        PortModels:
+        - rid: 3599170270791991653
+        NodeType:
+          m_SerializableType: Unity.Behavior.Start, Unity.Behavior, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 3335272451348827663
+          m_Value1: 11549843281177505721
+        m_FieldValues: []
+        Repeat: 1
+    - rid: 3599170270791991653
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 3599170270791991652
+        m_Connections: []
+--- !u!114 &639267239966009532
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd922ae02c94c87a66e46a10a7319b9, type: 3}
+  m_Name: CommonEnemy1 Blackboard Editor
+  m_EditorClassIdentifier: 
+  AssetID:
+    m_Value0: 14141515313704273203
+    m_Value1: 7260532042743210856
+  m_Variables:
+  - rid: 3599170270791991658
+  - rid: 3599170281910042738
+  - rid: 3599170281910042761
+  - rid: 3599170281910042796
+  - rid: 3599170281910042809
+  - rid: 3599170281910042851
+  - rid: 3599170281910042890
+  m_VersionTimestamp: 638698247177616956
+  m_CommandBuffer:
+    m_Commands: []
+  m_RuntimeBlackboardAsset: {fileID: 1147628039253803403}
+  references:
+    version: 2
+    RefIds:
+    - rid: 3599170270791991658
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 3599170281910042738
+      type: {class: 'TypedVariableModel`1[[EntityMover, Assembly-CSharp]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 5904417405269270357
+          m_Value1: 9669836472990013344
+        Name: Mover
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 3599170281910042761
+      type: {class: 'TypedVariableModel`1[[EntityRenderer, Assembly-CSharp]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 9852792481928973458
+          m_Value1: 13144008029007646800
+        Name: Renderer
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 3599170281910042796
+      type: {class: 'TypedVariableModel`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 846753127742361054
+          m_Value1: 4693156328686043498
+        Name: Target
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 3599170281910042809
+      type: {class: 'TypedVariableModel`1[[System.Single, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 10938850044205767082
+          m_Value1: 3162083762509755897
+        Name: SightRange
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 0
+    - rid: 3599170281910042851
+      type: {class: 'TypedVariableModel`1[[StateSO, Assembly-CSharp]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 15497534404654245639
+          m_Value1: 7431726267304443813
+        Name: State
+        IsExposed: 0
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 3599170281910042890
+      type: {class: 'TypedVariableModel`1[[CommonEnemyStateChange, Assembly-CSharp]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 9090294413597610063
+          m_Value1: 12480293517276887150
+        Name: StateChange
+        IsExposed: 0
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+--- !u!114 &1147628039253803403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c02bb70996b49eba31d0c206e28da24, type: 3}
+  m_Name: CommonEnemy1 Blackboard Editor
+  m_EditorClassIdentifier: 
+  VersionTimestamp: 638698247177616956
+  AssetID:
+    m_Value0: 14141515313704273203
+    m_Value1: 7260532042743210856
+  m_Blackboard:
+    m_Variables:
+    - rid: 3599170281910042902
+    - rid: 3599170281910042903
+    - rid: 3599170281910042904
+    - rid: 3599170281910042905
+    - rid: 3599170281910042906
+    - rid: 3599170281910042907
+    - rid: 3599170281910042908
+  m_SharedBlackboardVariableGuids: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 3599170281910042902
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 0}
+    - rid: 3599170281910042903
+      type: {class: 'BlackboardVariable`1[[EntityMover, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 5904417405269270357
+          m_Value1: 9669836472990013344
+        Name: Mover
+        m_Value: {fileID: 0}
+    - rid: 3599170281910042904
+      type: {class: 'BlackboardVariable`1[[EntityRenderer, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 9852792481928973458
+          m_Value1: 13144008029007646800
+        Name: Renderer
+        m_Value: {fileID: 0}
+    - rid: 3599170281910042905
+      type: {class: 'BlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 846753127742361054
+          m_Value1: 4693156328686043498
+        Name: Target
+        m_Value: {fileID: 0}
+    - rid: 3599170281910042906
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 10938850044205767082
+          m_Value1: 3162083762509755897
+        Name: SightRange
+        m_Value: 0
+    - rid: 3599170281910042907
+      type: {class: 'BlackboardVariable`1[[StateSO, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 15497534404654245639
+          m_Value1: 7431726267304443813
+        Name: State
+        m_Value: {fileID: 0}
+    - rid: 3599170281910042908
+      type: {class: 'BlackboardVariable`1[[CommonEnemyStateChange, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 9090294413597610063
+          m_Value1: 12480293517276887150
+        Name: StateChange
+        m_Value: {fileID: 0}
+--- !u!114 &1627833635847645680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b27bb6d9a2c8d540a10dff10acc543e, type: 3}
+  m_Name: CommonEnemy1 Debug Info
+  m_EditorClassIdentifier: 
+  m_CodeBreakPointsList: []
